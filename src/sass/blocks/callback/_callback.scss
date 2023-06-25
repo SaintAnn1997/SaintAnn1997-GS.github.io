@@ -1,0 +1,37 @@
+.callback {
+    margin-top: 100px;
+    padding: 64px 245px 56px 245px;
+    background-color: #F2F8FF;
+    &__title {
+        text-align: center;
+    }
+    &__text {
+        max-width: 518px;
+        margin: 0 auto;
+        margin-top: 25px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #454F5B;
+        text-align: center;
+    }
+    &__form {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+    &__input {
+        padding: 12px 147px 12px 16px;
+        max-width: 240px;
+        height: 50px;
+        background: rgba(22, 28, 36, 0.04);
+        border: none;
+        font-weight: 400;
+        font-size: 16px;
+        &::placeholder {
+            color:rgba(69, 79, 91, 0.8);
+        }
+    }
+}

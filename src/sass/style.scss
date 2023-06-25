@@ -1,0 +1,33 @@
+@import 'libs/normalize';
+@import 'libs/animate';
+
+@import 'reset'; 
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+@import 'blocks/buttons';
+@import 'blocks/footer-links';
+@import 'blocks/title';
+
+@import 'blocks/header/header';
+@import 'blocks/headerPopupCatalog/headerPopupCatalog';
+@import 'blocks/mainSlider/mainSlider';
+@import 'blocks/statistics/statistics';
+@import 'blocks/why/why';
+@import 'blocks/categories/categories';
+@import 'blocks/products/products';
+@import 'blocks/globalSlider/globalSlider';
+@import 'blocks/callback/callback';
+@import 'blocks/footer/footer';
+
+@import 'blocks/media';
+@import 'blocks/header/header-media';
+@import 'blocks/headerPopupCatalog/headerPopupCatalog-media';
+@import 'blocks/mainSlider/mainSlider-media';
+@import 'blocks/statistics/statistics-media';
+@import 'blocks/why/why-media';
+@import 'blocks/categories/categories-media';
+@import 'blocks/globalSlider/globalSlider-media';
+@import 'blocks/callback/callback-media';
+@import 'blocks/footer/footer-media';

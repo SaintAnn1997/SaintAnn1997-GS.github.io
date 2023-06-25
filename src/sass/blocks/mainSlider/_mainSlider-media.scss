@@ -1,0 +1,106 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .main-slider {
+        &__wrapper {
+            padding: 30px 10px 45px 10px;
+        }
+        &__slide {
+            &-inner {
+                gap: 65px;
+            }
+            &-title {
+                font-size: 37px;
+                line-height: 56px;
+            }
+            &-img {
+                width: 325px;
+                height: 320px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .main-slider {
+        &__slide {
+            &-inner {
+                gap: 40px;
+            }
+            &-img {
+                width: 289px;
+                height: 258px;
+            }
+            &-title {
+                font-size: 23px;
+                line-height: 33px;
+            }
+            &-text p {
+                font-size: 10px;
+                line-height: 17px;
+            }
+            &-price {
+                margin-top: 10px;
+            }
+            &-value {
+                font-size: 22px;
+                &--decoration {
+                    font-size: 20px;
+                }
+            }
+            &-btn {
+                width: 192px;
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .main-slider {
+        &__slide {
+            &-inner {
+                flex-direction: column;
+                gap: 15px;
+            }
+            &-img {
+                margin: 0 auto;
+            }
+            &-text {
+                display: none;
+            }
+            &-value {
+                font-size: 18px;
+                &--decoration {
+                    font-size: 14px;
+                }
+            }
+            &-btn {
+                width: 343px;
+            }
+        }
+        &__control {
+            gap: 125px;
+        }
+    }
+}

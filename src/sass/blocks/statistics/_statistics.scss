@@ -1,0 +1,25 @@
+.statistics {
+    background-color: #F2F8FF;
+    &__items {
+        padding: 40px 207px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 82px;
+    }
+    &__item {
+        text-align: center;
+        &-value {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 38px;
+        }
+        &-text {
+            margin-top: 16px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 26px;
+            color: #454F5B;
+        }
+    }
+}

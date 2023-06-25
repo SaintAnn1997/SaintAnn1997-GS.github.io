@@ -1,0 +1,87 @@
+.main-slider {
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02));
+    &__wrapper {
+        padding: 120px 110px 45px 50px;
+    }
+    &__slide {
+        &-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+        }
+        &-img {
+            width: 522px;
+            height: 523px;
+            object-fit: cover;
+        }
+        &-text p {
+            margin-top: 15px;
+            max-width: 287px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #454F5B;
+        }
+        &-price {
+            margin-top: 32px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 22px;
+            color: #454F5B;
+        }
+        &-value {
+            display: inline-block;
+            margin-top: 5px;
+            padding-right: 12px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            &--decoration {
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 26px;
+                text-decoration-line: line-through;
+                color: #A4A4A4;
+            }
+        }
+        &-btn {
+            display: block;
+            margin-top: 15px;
+        }
+    }
+    &__control {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        padding-bottom: 48px;
+        &-dots {
+            display: flex;
+            gap: 16px;
+            list-style: none;
+        }
+        &-dot {
+            width: 6px;
+            height: 6px;
+            background-color: #ADD7FF;
+            border-radius: 100%;
+            transition: .5s ease-in-out;
+            cursor: pointer;
+            &--active {
+                width: 8px;
+                height: 8px;
+                background-color: #4295E4;
+                outline: 1px solid #ADD7FF;
+                outline-offset: 8px;
+            }
+        }
+        &-prev {
+            cursor: pointer;
+        }
+        &-next {
+            cursor: pointer;
+        }
+    }
+}

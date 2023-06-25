@@ -1,0 +1,125 @@
+.global-slider {
+    position: relative;
+    width: 100%;
+    &__control {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-inner {
+            padding-right: 20px;
+            display: flex;
+            gap: 50px;
+        }
+    }
+    &__prev {
+        cursor: pointer;
+        &--inactive svg path  {
+            stroke: #C4CDD5;
+        }
+    }
+    &__next {
+        cursor: pointer;
+        &--inactive svg path  {
+            stroke: #C4CDD5;
+        }
+    }
+    &__wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+    &__inner {
+        margin-top: 65px;
+            position: relative;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            transition: all 0.7s ease 0s;
+
+    }
+    &__slide {
+        position: relative;
+    }
+    &__card {
+        padding: 17px 12px 10px 12px;
+        &-inner {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            top: 17px;
+            left: 12px;
+            gap: 114px;
+
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        &-available {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        &-checkbox {
+            padding: 7px 6px;
+            width: 20px;
+            height: 20px;
+            background-color: $second-color;
+        }
+        &-text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #454F5B;
+        }
+        &-sail {
+            padding: 8px 10px;
+            width: 51px;
+            height: 30px;
+            background-color: $second-color;
+        }
+        &-gift {
+            position: absolute;
+            padding: 6px 8px 6px 30px;
+            top: 50px;
+            left: 12px;
+
+            width: 90px;
+            height: 26px;
+
+            background-color: $second-color;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.03);
+
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url(../img/products/gift.svg);
+                width: 12px;
+                height: 12px;
+                top: 6px;
+                left: 8px;
+            }
+        }
+        &-descr {
+            max-width: 264px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #454F5B;
+        }
+        &-price {
+            margin-top: 11px;
+            display: inline-block;
+            padding-right: 12px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            &--decoration {
+                font-size: 18px;
+                text-decoration-line: line-through;
+                color: #454F5B;
+            }
+        }
+    }
+}

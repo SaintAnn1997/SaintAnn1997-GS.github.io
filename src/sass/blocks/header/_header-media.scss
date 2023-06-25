@@ -1,0 +1,126 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .header {
+        &__top {
+            &-promocode {
+                font-size: 13px;
+            }
+        }
+        &__bottom {
+            &-left {
+                gap: 35px;
+            }
+        }
+        &__tel {
+            font-size: 12px;
+        }
+    }
+
+    .menu {
+        &__list {
+            &-item {
+                font-size: 13px;
+            }
+        }
+        &__arrow {
+            top: 5px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .header {
+        &__top {
+            display: block;
+            padding: 9px;
+            text-align: center;
+            &-callback {
+                display: none;
+            }
+            &-promocode {
+                font-size: 15px;
+            }
+        }
+        &__bottom {
+            position: relative;
+            &-right {
+                gap: 60px;
+            }
+            &-logo {
+                display: none;
+            }
+        }
+        &__tel {
+            font-size: 15px;
+        }
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 12px;
+        span {
+            display: block;
+            height: 2px;
+            width: 24px;
+            background-color: $main-color;
+            margin-bottom: 2px;
+            transition: .5s all;
+        }
+        &--active {
+            span {
+            margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .header {
+        &__top {
+            &-promocode {
+                font-size: 12px;
+            }
+        }
+        &__tel {
+            display: none;
+        }
+    }
+
+}

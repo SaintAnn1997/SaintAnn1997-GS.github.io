@@ -1,0 +1,91 @@
+.footer {
+    background-color: #0D2436;
+    &__inner {
+        margin-top: 55px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        &-logo {
+            width: 105px;
+            height: 88px;
+        }
+        &-social {
+            margin-top: 145px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+    }
+    &__right {
+        display: flex;
+        gap: 120px;
+    }
+    &__title {
+        color: $second-color;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    &__navigation {
+        &-list {
+            margin-top: 25px;
+        }
+        &-link {
+            margin-bottom: 15px;
+        }
+    }
+    &__contacts {
+        &-inner {
+            margin-top: 25px;
+        }
+        &-title {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 24px;
+            color: #C4CDD5;
+        }
+        &-tel {
+            margin-top: 15px;
+        }
+        &-email {
+            margin-top: 15px;
+        }
+        &-inner a {
+            display: block;
+            margin-bottom: 12px;
+        }
+    }
+    &__address {
+        &-inner {
+            margin-top: 25px;
+        }
+        &-inner p {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+    &__information {
+        &-list {
+            margin-top: 25px;
+        }
+        &-link {
+            margin-bottom: 15px;
+        }
+    }
+    &__line {
+        margin: 50px 0 25px 0;
+        border: 1px solid #FFFFFF;
+        opacity: 0.08;
+    }
+    &__rights {
+        margin-bottom: 25px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $second-color;
+        opacity: 0.6;
+    }
+}

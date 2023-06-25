@@ -1,0 +1,40 @@
+.categories {
+    margin-top: 120px;
+    &__title {
+        text-align: center;
+    }
+    &__items {
+        margin-top: 65px;
+        display: grid;
+        grid-template: minmax(161px, auto) / repeat(2, 600px);
+        grid-auto-rows: minmax(161px, auto);
+        justify-content: center;
+        gap: 40px;
+    }
+    &__item {
+        position: relative;
+        &-inner {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+        }
+        &-title {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 34px;
+        }
+        &-btn {
+            margin-top: 28px;
+            padding: 12px 78px;
+            background-color: transparent;
+            border: 1px solid #454F5B;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 62px;
+    }
+}

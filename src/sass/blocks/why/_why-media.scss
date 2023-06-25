@@ -1,0 +1,47 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .why {
+        &__item {
+            &-descr {
+                margin-top: 20px;
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .why {
+        &__items {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .why {
+        &__items {
+            margin-top: 25px;
+        }
+        &__item {
+            width: 343px;
+        }
+        &__title {
+            font-size: 25px;
+        }
+    }
+}
+
