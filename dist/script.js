@@ -98,6 +98,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_sliderMain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/sliderMain */ "./src/js/modules/sliderMain.js");
 /* harmony import */ var _modules_popupCatalog__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/popupCatalog */ "./src/js/modules/popupCatalog.js");
 /* harmony import */ var _modules_global_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/global-slider */ "./src/js/modules/global-slider.js");
+/* harmony import */ var _modules_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/menu */ "./src/js/modules/menu.js");
+
 
 
 
@@ -105,6 +107,7 @@ window.addEventListener('DOMContentLoaded', () => {
   Object(_modules_sliderMain__WEBPACK_IMPORTED_MODULE_0__["default"])('.main-slider__slide', '.main-slider__control-prev', '.main-slider__control-next', '.main-slider__control-dot');
   Object(_modules_popupCatalog__WEBPACK_IMPORTED_MODULE_1__["default"])('.popup__catalog', '.menu__list-item');
   Object(_modules_global_slider__WEBPACK_IMPORTED_MODULE_2__["default"])('.global-slider__slide', '.global-slider__wrapper', '.global-slider__inner', '.global-slider__prev', '.global-slider__next');
+  Object(_modules_menu__WEBPACK_IMPORTED_MODULE_3__["default"])('.hamburger', '.menu__list', '.menu__list-item');
 });
 
 /***/ }),
@@ -220,6 +223,38 @@ const globalSlider = (slidesSelector, sliderWrapperSelector, slidesFieldSelector
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (globalSlider);
+
+/***/ }),
+
+/***/ "./src/js/modules/menu.js":
+/*!********************************!*\
+  !*** ./src/js/modules/menu.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const menu = (hamburgerSelector, menuSelector, menuItemSelector) => {
+  const hamburger = document.querySelector(hamburgerSelector);
+  const menu = document.querySelector(menuSelector);
+  const menuItem = document.querySelectorAll(menuItemSelector);
+  let isOpen = false;
+  function toggleMenu() {
+    isOpen = !isOpen;
+    hamburger.classList.toggle('hamburger--active');
+    menu.classList.toggle('menu__list--active');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+  ;
+  hamburger.addEventListener('click', toggleMenu);
+  menuItem.forEach(item => {
+    item.addEventListener('click', () => {
+      toggleMenu();
+    });
+  });
+};
+/* harmony default export */ __webpack_exports__["default"] = (menu);
 
 /***/ }),
 

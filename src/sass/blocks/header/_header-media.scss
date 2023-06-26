@@ -63,7 +63,30 @@
     }
 
     .menu {
-        display: none;
+        &__list {
+            position: fixed;
+            display: block;
+            top: 117px;
+            left: -100%;
+            width: 30%;
+            height: 100vh;
+            padding: 20px 15px ;
+            background-color: #FFFF;
+            visibility: hidden;
+            opacity: 0;
+            transition: .6s all;
+            z-index: 1;
+            &-item {
+                margin-bottom: 32px;
+                border-bottom: 1px solid #EAEAEA;
+                padding-bottom: 15px;
+            }
+        }
+        &__list--active {
+            left: 0%;
+            visibility: visible;
+            opacity: 1;
+        }
     }
 
     .hamburger {
@@ -104,6 +127,12 @@
         max-width: 540px;
     }
 
+    .menu {
+        &__list {
+            width: 50%;
+        }
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -120,6 +149,12 @@
         }
         &__tel {
             display: none;
+        }
+    }
+
+    .menu {
+        &__list {
+            width: 100%;
         }
     }
 

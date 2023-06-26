@@ -1,4 +1,5 @@
 .header {
+    box-shadow: 0px -1px 0px 0px #C4CDD5 inset;
     &__bg {
         background-color: #454F5B;
         height: 45px;
@@ -68,7 +69,18 @@
         top: 6px;
         right: 0;
     }
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: .3 ;
+    }
 }
+
+
 
 .hamburger {
     display: none;
